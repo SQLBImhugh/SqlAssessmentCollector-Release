@@ -49,12 +49,15 @@ Get-ChildItem -Recurse | Unblock-File
 
 ## Releases
 
-Each release is tagged by date (`vYYYY.MM.DD`) and has two assets:
+Releases are tagged by date (`vYYYY.MM.DD`). Same-day revisions append `.1`, `.2`,
+and so on. Every release includes the package and its matching hash; UI updates
+can also include a screenshot referenced in the release notes.
 
 | Asset | Content |
 |---|---|
 | `SQLAssessmentCollector.zip` | The package: the launchers and PowerShell scripts, `README.txt`, `RUNBOOK.html` and the sample `DMS-INPUT-FILE.csv` |
 | `SQLAssessmentCollector.zip.sha256` | The ZIP's SHA-256 hash |
+| `advanced-options-*.png` (when included) | Screenshot of the release's Setup controls |
 
 The link `releases/latest/download/SQLAssessmentCollector.zip` always returns the newest
 release.
